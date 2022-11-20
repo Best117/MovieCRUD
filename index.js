@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const mongoose = require("mongoose");
 
-const mongooseUri = "mongodb+srv://movieDatabaseLite:mBl349@moviedatabase.8edackh.mongodb.net/movieDatabase"
+const mongooseUri = "mongodb+srv://movieDatabaseLite:mBl349@moviedatabase.8edackh.mongodb.net/movieCRUD"
 mongoose.connect(mongooseUri, {useNewUrlParser: true}, {useUnifiedTopology: true})
 const movieSchema = {
 	title: String,
