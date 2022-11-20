@@ -17,7 +17,6 @@ const movieSchema = {
 }
 const Movie = mongoose.model("movie", movieSchema);
 
-// Create route called from create.html
 app.post("/create", function(req, res){
 	let newNote = new Movie({
 		title: req.body.title,
