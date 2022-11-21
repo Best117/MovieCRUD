@@ -67,10 +67,6 @@ app.delete("/delete", function(req, res) {
 	Movie.deleteOne({title: req.body.title});
 	res.redirect("/");
 });
-
-// Todo: Implement your own MongoDB Atlas Organization, Project, Database Cluster, Database, and Collection.
-// Todo: Implement and test the Update and Delete functionCRUD.
-
 // End MongoDB Atlas *******
 
 const port = process.env.PORT || 3000;
