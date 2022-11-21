@@ -45,6 +45,10 @@ app.get("/read", function(request, response) {
 	})
 })
 
+app.update("/update", async function(client, nameOfListing, updatedListing){
+	const result = await client.db("moviesCrud").collection("movies").updateOne({ name: nameOfListing }, { $set: updatedListing });
+})
+
 // Todo: Implement your own MongoDB Atlas Organization, Project, Database Cluster, Database, and Collection.
 // Todo: Implement and test the Update and Delete functionCRUD.
 
